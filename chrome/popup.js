@@ -27,10 +27,22 @@ $(function () {
 });
 
 function download_image(){
+    let file_name = "output";
+    obj = {};
+    obj.target_color = $("input[name='target_color']").val();
+    obj.pixel_size = $("input[name='pixel_size']").val();
+    obj.border = $("input[name='border']").val();
+    obj.mesh = $("input[name='mesh']").val();
+    
+    file_name += "-" + String(obj.target_color);
+    file_name += "-" + String(obj.pixel_size);
+    file_name += "-" + String(obj.border);
+    file_name += "-" + String(obj.mesh);
+    file_name += ".png";
     let canvas = document.getElementById("canvas");
     let link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
-    link.download = "output.png";
+    link.download = file_name;
     link.click();
 }
 
@@ -49,13 +61,20 @@ function update_settings() {
     context.drawImage(img, 0, 0, img.naturalWidth, img.naturalHeight);
     let imagedata = context.getImageData(0, 0, img.naturalWidth, img.naturalHeight);
     const out = run_color_reduction(imagedata.data, imagedata.width, imagedata.height, obj.target_color, [mesh, mesh, mesh]);
-    let dst = context.createImageData(canvas.width, canvas.height);
-    const resize_out = resize_image(out.image_dot_list, imagedata.width, imagedata.height, out.color_list, obj.pixel_size, true, 0.1 * obj.border);
-    for(let i=0;i<imagedata.width * imagedata.height * 4;++i){
-        dst.data[i] = resize_out[i];
+    if (obj.pixel_size > 1){
+        let dst = context.createImageData(canvas.width, canvas.height);
+        const resize_out = resize_image(out.image_dot_list, imagedata.width, imagedata.height, out.color_list, obj.pixel_size, true, 0.1 * obj.border);
+        for(let i=0;i<imagedata.width * imagedata.height * 4;++i){
+            dst.data[i] = resize_out[i];
+        }
+        context.putImageData(dst, 0, 0);
+    }else{
+        let dst = context.createImageData(canvas.width, canvas.height);
+        for(let i=0;i<imagedata.width * imagedata.height * 4;++i){
+            dst.data[i] = out.image_parsed[i];
+        }
+        context.putImageData(dst, 0, 0);
     }
-    context.putImageData(dst, 0, 0);
-
     
     const canvas_out = document.getElementById("canvas_out");
     const context_out = canvas_out.getContext("2d");

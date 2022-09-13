@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "default_locale" : "en",
     "manifest_version": 3,
-    "description": "Bitjourney is a tool for generating retrogame-style images by color reduction and resolution reduction. Bitjourney has smart (old-days) AI and can process images fast and beautifully.",
+    "description": "Bitjourney is an AI engine for generating retrogame-style images by color reduction and resolution reduction fast and beautifully.",
     "permissions": [
 	"contextMenus",
 	"clipboardWrite",
