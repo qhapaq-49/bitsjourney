@@ -3,15 +3,24 @@
 </head>
 <body>
 <meta charset="UTF-8">
-  <h1>Bitjourney Prompt</h1>
+  <h1>Bitjourney (<a href="https://github.com/qhapaq-49/bitjourney/tutorial/chrome">read tutorial</a>)</h1> 
+  <table>
+  <tr>
+    <td>Number of color</td>
+    <td>Pixel size</td>
+    <td>Border</td>
+    <td>Mesh</td>
+  </tr>
+  <tr>
+    <td><input type="number" name="target_color" value="16" step="1", min="2" style="width:100px;"></td>
+    <td><input type="number" name="pixel_size" value="2" step="1", min="1" style="width:100px;"></td>
+    <td><input type="number" name="border" value="10" step="1", min="0" style="width:100px;"> </td>
+    <td><input type="number" name="mesh" value="10" step="1", min="4" style="width:100px;"></td>
+  </tr>
+  </table>
   <!-- <p><label>Highlight Color: <input id="#highlight-color" type="color" name="color" value="#ffff00" /> </label></p> -->
-  <p><label>Number of color: <input type="number" name="target_color" value="16" step="1", min="2"></label></p>
-  <p><label>Pixel size: <input type="number" name="pixel_size" value="2" step="1", min="1"> </label></p>
-  <p><label>Border: <input type="number" name="border" value="10" step="1", min="0"> </label></p> 
-  <p><label>Mesh: <input type="number" name="mesh" value="10" step="1", min="4"> </label></p> 
-  <p><label>Auto mesh : <input type="checkbox" name="automesh"></label></p>
-  <p><button id="register">Generate Image</button></p>
-  <p><button id="download">download</button></p>
+  <p  style="display:none"><label>Auto mesh : <input type="checkbox" name="automesh"></label></p>
+  <p><button id="register">Generate Image</button>  <button id="download">download</button></p>
   <p>
   <canvas id="canvas_out" width="10px" height="10px"></canvas>
   </p>

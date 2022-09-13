@@ -9,17 +9,12 @@ chrome.runtime.onInstalled.addListener(function () {
 	chrome.storage.local.set(
 		{
 			"border" : 10,
-			"target_color" : 16,
-			"pixel_size" : 2,
-			"fig_url" : "img/icon-128x128.png",
+			"target_color" : 8,
+			"pixel_size" : 4,
+			"fig_url" : "img/example.png",
 			"mesh" : 10,
 		}, null);
     return true;
-});
-
-
-chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-    sendResponse({});
 });
 
 
