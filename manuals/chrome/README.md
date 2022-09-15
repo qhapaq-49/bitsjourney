@@ -1,8 +1,8 @@
 # How to use Bitjourney (Bitjourneyの使い方)
 
 ## Install from chrome web store (chrome web storeからインストールする)
-- You can install Bitjourney for chrome extension from [here]()
-- Bitjourney for chrome 拡張は[ここからダウンロードできます]()
+- You can install Bitjourney for chrome extension from [here](https://chrome.google.com/webstore/detail/bitjourney-retro-game-gra/ollneaflfdbmjhadhfbdghlmmheenoii)
+- Bitjourney for chrome 拡張は[ここからダウンロードできます](https://chrome.google.com/webstore/detail/bitjourney-retro-game-gra/ollneaflfdbmjhadhfbdghlmmheenoii)
 
 ## Let's generate 8 colors Mona Lisa (8色のモナリザを作ってみよう)
 - After installing the chrome extension, you will see a Mona Lisa icon in the upper right corner of your browser. Click on it, and a pop-up window will appear as shown below. Click the "Generate Image" button to output an 8-color Mona Lisa.
