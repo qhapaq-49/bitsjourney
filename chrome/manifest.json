@@ -1,6 +1,6 @@
 {
     "name": "Bitjourney : Retro Game Graphics Generator",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "default_locale" : "en",
     "manifest_version": 3,
     "description": "Bitjourney is an AI engine for generating retro game style images by color reduction and resolution reduction.",
