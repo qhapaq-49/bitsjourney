@@ -17,6 +17,13 @@ $(function () {
         let elem = document.getElementById("palette");
         elem.src = obj.fig_url;
     }
+    if ("img_info" in obj){
+        if (obj.img_info != "empty"){
+            let elem = document.getElementById("palette");
+            elem.src = obj.img_info;
+        }
+        
+    }
 	$("#register").on("click", function() {
 	    update_settings();
 	});
