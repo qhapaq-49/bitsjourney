@@ -16,11 +16,19 @@ $(function () {
     if ("fig_url" in obj) {
         let elem = document.getElementById("palette");
         elem.src = obj.fig_url;
+        elem.onload = function() {
+            let v = document.getElementById("sizeinfo");
+            v.textContent = "Resolution by pixel : original= " + String(elem.naturalWidth) + "x" + String(elem.naturalHeight);
+        }
     }
     if ("img_info" in obj){
         if (obj.img_info != "empty"){
             let elem = document.getElementById("palette");
             elem.src = obj.img_info;
+            elem.onload = function() {
+                let v = document.getElementById("sizeinfo");
+                v.textContent = "Resolution by pixel : original= " + String(elem.naturalWidth) + "x" + String(elem.naturalHeight);
+            }
         }
         
     }
@@ -83,6 +91,9 @@ function update_settings() {
         context.putImageData(dst, 0, 0);
     }
     
+    let v = document.getElementById("sizeinfo");
+    v.textContent = "Resolution by pixel : original= " + String(img.naturalWidth) + "x" + String(img.naturalHeight) + ", generated = " + String(parseInt(img.naturalWidth / obj.pixel_size)+1) + "x" + String(parseInt(img.naturalHeight / obj.pixel_size)+1);
+
     const canvas_out = document.getElementById("canvas_out");
     const context_out = canvas_out.getContext("2d");
     const scale = 400 / img.naturalWidth;

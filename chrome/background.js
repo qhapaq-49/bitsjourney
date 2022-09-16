@@ -1,8 +1,8 @@
 
 chrome.runtime.onInstalled.addListener(function () {
     chrome.contextMenus.create({
-	"id": "Pixel-san",
-	"title": "Pixel-san : Retro graphics generator",
+	"id": "Bitsjourney",
+	"title": "Bitsjourney : Retro graphics generator",
 	"type": "normal",
 	"contexts": ["image"],
     });
