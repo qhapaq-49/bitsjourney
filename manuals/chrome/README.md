@@ -1,10 +1,8 @@
-# How to use Pixel-san (Pixel-sanの使い方)
-
-- Pixel-san 0.0.1 and 0.0.2 cannot convert local images. Please wait for 0.0.3 (waiting for approval from chrome web store) or install from this repository.
+# How to use Bitsjourney (Bitsjourneyの使い方)
 
 ## Install from chrome web store (chrome web storeからインストールする)
-- You can install Pixel-san for chrome extension from [here](https://chrome.google.com/webstore/detail/pixel-san-retro-game-gra/ollneaflfdbmjhadhfbdghlmmheenoii)
-- Pixel-san for chrome 拡張は[ここからダウンロードできます](https://chrome.google.com/webstore/detail/pixel-san-retro-game-gra/ollneaflfdbmjhadhfbdghlmmheenoii)
+- You can install Bitsjourney for chrome extension from [here](https://chrome.google.com/webstore/detail/bitsjourney-retro-game-gra/ollneaflfdbmjhadhfbdghlmmheenoii)
+- Bitsjourney for chrome 拡張は[ここからダウンロードできます](https://chrome.google.com/webstore/detail/bitsjourney-retro-game-gra/ollneaflfdbmjhadhfbdghlmmheenoii)
 
 ## Let's generate 8 colors Mona Lisa (8色のモナリザを作ってみよう)
 - After installing the chrome extension, you will see a Mona Lisa icon in the upper right corner of your browser. Click on it, and a pop-up window will appear as shown below. Click the "Generate Image" button to output an 8-color Mona Lisa.
@@ -25,21 +23,21 @@
 ![Example of the change of the resolution](../images/chrome3.png)
 
 ## Let's convert your own image (自分の好きな画像を変換してみよう)
-- When you right-click on an image in the chrome browser, you should see the option "Pixel-san : Retro graphics generator". Clicking on it will change the image in the popup to the image you right-clicked on.
-- chromeブラウザ上で画像を右クリックすると「Pixel-san : Retro graphics generator」というオプションが表示されるはずです。クリックすることでポップアップに表示される画像があなたが右クリックした画像に変更されます。
+- When you right-click on an image in the chrome browser, you should see the option "Bitsjourney : Retro graphics generator". Clicking on it will change the image in the popup to the image you right-clicked on.
+- chromeブラウザ上で画像を右クリックすると「Bitsjourney : Retro graphics generator」というオプションが表示されるはずです。クリックすることでポップアップに表示される画像があなたが右クリックした画像に変更されます。
 ![Try right click](https://upload.wikimedia.org/wikipedia/commons/7/7a/Kizuna_AI_-_SCP_Foundation_2.png)
 - Try right clich!
 
 ## When you cannot open image (画像が開けないときは)
-- Please right-click the image and click "Open link in new tab". Then you can open the image in a new tab. After that right-click the image in the new tab and click "Pixel-san : Retro graphics generator". 
-- 画像を右クリックして「新しいタブで画像を開く」をクリックすることで、画像を新しいタブで開くことができます。新しく開いたタブ側の画像を右クリックして「Pixel-san : Retro graphics generator」をクリックしてみてください
+- Please right-click the image and click "Open link in new tab". Then you can open the image in a new tab. After that right-click the image in the new tab and click "Bitsjourney : Retro graphics generator". 
+- 画像を右クリックして「新しいタブで画像を開く」をクリックすることで、画像を新しいタブで開くことができます。新しく開いたタブ側の画像を右クリックして「Bitsjourney : Retro graphics generator」をクリックしてみてください
 
 ![Sorry for the failure](../images/chrome_fail.png)
-- You will see invalid image when Pixel-san failed to open the image
+- You will see invalid image when Bitsjourney failed to open the image
 
 ## When you cannot open image even in the new tab (上記の方法で解決しないときは)
-- Please save the image into your computer and open the image using google chrome. After that right-click the image opened by google chrome and click "Pixel-san : Retro graphics generator". 
-- 画像を自分のパソコンに一旦保存し、保存した画像をgoogle chromeで開いてください。google chromeで開いた画像を右クリックして「Pixel-san : Retro graphics generator」をクリックしてください
+- Please save the image into your computer and open the image using google chrome. After that right-click the image opened by google chrome and click "Bitsjourney : Retro graphics generator". 
+- 画像を自分のパソコンに一旦保存し、保存した画像をgoogle chromeで開いてください。google chromeで開いた画像を右クリックして「Bitsjourney : Retro graphics generator」をクリックしてください
 
 ## Let's modify the coutour line (輪郭線の太さを調整しよう)
 - In low-resolution images, contour lines are sometimes smashed. In such cases, try setting the "Border" value to 10 (other values can be taken, but basically 10 behaves best. When you set the value to 0, contour lines will not be modified).
@@ -53,6 +51,11 @@
 
 ![Example of the change of the mesh](../images/chrome5.png)
 
+# Gallery
+![Example of 8 colors](../images/gallery_out.png)
+
 # License (ライセンス情報)
-- Images used as examples are from the Japanese version of wikipedia. Kizuna AI images (and images converted by Pixel-san) are licensed under CC BY-SA 3.0. © Kizuna AI, SCP Foundation., CC BY-SA 3.0
-- 本資料で使われている画像は、wikipediaの日本語版から引用しています。キズナアイの画像（およびPixel-sanで変換した画像）は、CC BY-SA 3.0ライセンスで提供されています。© Kizuna AI, SCP Foundation., CC BY-SA 3.0
+- Note : Images used as thumbnails are from the Japanese version of wikipedia. Kizuna AI images (and images converted by Bitjourney) are licensed under CC BY-SA 3.0. Images of Nishimura Hiroyuki are licensed under CC BY-SA 2.5
+
+- © Kizuna AI, SCP Foundation., CC BY-SA 3.0
+- Joichi Ito - Original text: Taken by author Transferred from English Wikipedia
